@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Филипп Прозоров](https://up.htmlacademy.ru/adaptive/21/user/1578625).
-* Наставник: `Неизвестно`.
+* Наставник: Николай Момотенко.
 
 ---
 
