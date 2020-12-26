@@ -6,8 +6,8 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
+      <a class="page-header__logo page--logo__link">
+        <img class="main-nav__logo" src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,16 +16,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="catalog.html">Главная</a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a>Фотографии</a>
+              <a class="main-nav__link" href="catalog.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a>HTML Academy</a>
+              <a class="main-nav__link">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -37,9 +37,9 @@
           <h1 class="download__title">Взгляните на жизнь иначе!</h1>
           <a class="button button--download" href="#download">Скачать приложение</a>
           <ul class="download__icons-list">
-            <li><a class="download__icon  download__icon--apple" href="#apple-store" title="скачать для iOS">скачать для iOS</a></li>
-            <li><a class="download__icon  download__icon--android" href="#play-market" title="скачать для Android">скачать для Android</a></li>
-            <li><a class="download__icon  download__icon--windows" href="#win-store" title="скачать для Windows">скачать для Windows</a></li>
+            <li class="download__icons-item"><a class="download__icon  download__icon--apple" href="#apple-store" title="скачать для iOS">скачать для iOS</a></li>
+            <li class="download__icons-item"><a class="download__icon  download__icon--android" href="#play-market" title="скачать для Android">скачать для Android</a></li>
+            <li class="download__icons-item"><a class="download__icon  download__icon--windows" href="#win-store" title="скачать для Windows">скачать для Windows</a></li>
           </ul>
           <div class="download__text">
             <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -48,8 +48,7 @@
       </section>
       <section class="features">
         <div class="features__title-wrap">
-          <h2 class="features__title">Устали от серости мегаполиса?</h2>
-          <h2 class="features__title">Нам есть, что вам  предложить!</h2>
+          <h2 class="features__title">Устали от серости мегаполиса? <br> Нам есть, что вам  предложить!</h2>
         </div>
         <div class="features__item-container">
           <ul class="features__item-wrap">
@@ -71,7 +70,7 @@
       <section class="stats">
         <div class="stats__item">
           <h3 class="stats__title">Эффект на 24 часа!</h3>
-          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <p class="stats__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="stats__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
@@ -81,7 +80,7 @@
             <blockquote class="review__item slider__item">
               <div class="review__author-info">
                 <cite class="review__author-name">Николай Петров</cite>
-                <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <p clas="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 <div class="review-slider__author">
                   <cite class="review-slider--author__title">Николай Петров</cite>
                   <span>25 лет, водитель трамвая</span>
@@ -170,20 +169,20 @@
       <section class="contacts">
         <div class="contacts-info">
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-          <div class="contacts__list">
-            <div class="contacts__item">
+          <ul class="contacts__list">
+            <li class="contacts__item">
               <p class="contacts-phone__title">Звоните:</p>
               <a class="contacts-info__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </div>
-            <div class="contacts__item">
+            </li>
+            <li class="contacts__item">
               <p class="contacts-mail__title">Пишите:</p>
               <a class="contacts-info__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="contacts__item">
+            </li>
+            <li class="contacts__item">
               <p class="contacts-address__title">Приезжайте в гости:</p>
               <a class="contacts-info__address" href="#">ул. Большая Конюшенная, 19/8</a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
         <div class="contacts-map">
           <div class="contacts__map">
@@ -196,7 +195,7 @@
     <footer>
       <div class="page-footer__wrapper">
         <div class="page-footer__social social">
-          <a class="page-footer__logo" href="index.html">Pink</a>
+          <a class="page-footer__logo page--logo__link" href="index.html">Pink</a>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">Твиттер</a>
